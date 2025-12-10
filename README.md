@@ -14,6 +14,7 @@ I am actively upskilling to formalize my experience:
 ### 🚀 Featured Projects
 
 #### 🧠 CORTEX (Private AI Ecosystem)
+#### 🚧 Status: Active Development (Pre-Alpha Prototyping)
 A distributed, private AI assistant ecosystem designed for the Samsung S25 Ultra and local server infrastructure.
 * **Architecture:** Service-Oriented Architecture (SOA) bridging mobile edge devices with high-power backend servers.
 * **The Stack:** Kotlin (Android Service), Python (FastAPI Backend), and TensorFlow Lite (Edge Inference).
@@ -22,6 +23,7 @@ A distributed, private AI assistant ecosystem designed for the Samsung S25 Ultra
       * Backend Tuning: Actively benchmarking and switching between ROCm and Vulkan backends per model to maximize inference throughput.
 
 #### 📚 GLEH (Gammon's Landing Educational Hub)
+#### 🧪 Status: Active Development (Pre-Release Beta)
 [View Repository](https://github.com/allie-rae-devop/GLEH)
 A self-hosted, Dockerized learning management portal designed to serve educational resources to the public web.
 * **Deployment:** Hosted on Oracle Cloud Infrastructure (OCI) using Docker containers.
