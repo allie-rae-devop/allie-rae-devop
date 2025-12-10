@@ -17,7 +17,9 @@ I am actively upskilling to formalize my experience:
 A distributed, private AI assistant ecosystem designed for the Samsung S25 Ultra and local server infrastructure.
 * **Architecture:** Service-Oriented Architecture (SOA) bridging mobile edge devices with high-power backend servers.
 * **The Stack:** Kotlin (Android Service), Python (FastAPI Backend), and TensorFlow Lite (Edge Inference).
-* **Hardware:** Deployed on a **GMKtec EVO-X2 (96GB RAM)**, serving quantized 20B+ parameter models locally at ~19-40 t/s.
+* **Hardware Optimization:** Deployed on a GMKtec EVO-X2 (96GB RAM), pushing the hardware limits to serve 120B+ parameter models (e.g., openai GPT-OSS:120B) at ~19-40 t/s.
+      * Engineering Feat: Achieved stability by forcing GTT (Graphics Translation Table) allocation to bypass stock BIOS memory locks.
+      * Backend Tuning: Actively benchmarking and switching between ROCm and Vulkan backends per model to maximize inference throughput.
 
 #### 📚 GLEH (Gammon's Landing Educational Hub)
 [View Repository](https://github.com/allie-rae-devop/GLEH)
@@ -36,7 +38,7 @@ My lab environment simulates enterprise operations, spanning on-premise hardware
 * **Use Case:** Acts as the public-facing gateway for web services, leveraging the "Always Free" tier for high-performance, cost-effective hosting.
 
 **🏠 On-Premise Infrastructure**
-* **Local AI Nodes:** Custom-built high-RAM nodes (GMKtec) for running LLMs (Ollama) and image generation workflows (ComfyUI).
+* **AI Research & Training Node:** High-RAM compute nodes utilizing Oobabooga (Text Generation WebUI) and LLaMA Factory. Currently moving beyond simple inference into model fine-tuning and training workflows, alongside image generation pipelines using ComfyUI.
 * **Virtualization Cluster:** **Dell PowerEdge (R610)** and USFF nodes running **Proxmox VE** for high availability.
 * **Storage:** Transitioning from bare metal Unraid to ZFS-backed storage arrays with enterprise-grade permissions.
 * **Networking:** VLAN segmentation and network security managed via **TP-Link Omada** software controllers.
@@ -49,10 +51,12 @@ My lab environment simulates enterprise operations, spanning on-premise hardware
 * **Server OS:** Ubuntu Server, Debian, Windows Server
 * **Networking:** Nginx / Nginx Proxy Manager, TP-Link Omada
 
-**Development & Data**
+**Development & AI Engineering**
 * **Languages:** Python (FastAPI), Kotlin (Android), Java, HTML5/CSS
-* **AI/ML:** Ollama, TensorFlow Lite, ComfyUI, Local RAG
+* **AI Training & Ops:** LLaMA Factory (Fine-tuning), Oobabooga, Ollama, ComfyUI
+* **Edge & Optimization:** TensorFlow Lite, ROCm, Vulkan, Quantization, Local RAG
 * **Tools:** Git/GitHub, Android Studio, VS Code, Bash Scripting, n8n
 
 ---
-*Currently seeking opportunities in Help Desk L2, NOC Analysis, and Junior DevOps.*
+
+📫 **Open to connecting:** I am always interested in discussing new opportunities, collaborations, or deep-diving into local AI infrastructure. Feel free to reach out!
